@@ -1,0 +1,27 @@
+node_modules/
+dist/
+.DS_Store
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Local data — runtime artifacts
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+data/*.log
+data/*.pid
+data/snapshots/
+data/logs/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Test / coverage
+coverage/
+.vitest-cache/
